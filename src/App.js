@@ -1,16 +1,16 @@
 // import logo from './logo.svg';
 import './App.css';
 import StyleColor from './components/StyleColor';
-// import DemoStd from './components/DemoStd';
-import StudentReg from './components/StudentReg';
-// import Weather from './components/Weather';
+import DemoStd from './components/DemoStd';
+// import StudentReg from './components/StudentReg';
+import Weather from './components/Weather';
 
 function App() {
 
-  const handleUserAddition = (e) => {
-    console.log("I am from App.js");
-    console.log(e);
-  }
+  // const handleUserAddition = (e) => {
+  //   console.log("I am from App.js");
+  //   console.log(e);
+  // }
 
   const dte = new Date();
   const td = dte.toISOString();
@@ -23,12 +23,12 @@ function App() {
     <div className="App">
       <StyleColor data={user} ts={td} ln={frm}/>
       <br/>
-      {/* <DemoStd/> */}
+      <DemoStd/>
       <br/>
-      {/* <Weather/> */}
+      <Weather/>
       <br/>
       <br/>
-      <StudentReg onUserAdd={handleUserAddition} />
+      {/* <StudentReg onUserAdd={handleUserAddition} /> */}
     </div>
   );
 }
