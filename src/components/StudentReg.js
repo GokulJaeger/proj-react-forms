@@ -1,6 +1,7 @@
 import React, { useState,useEffect } from "react";
 import ErrorMessage from "./ErrorMessage";
-import "./UserRegi.css";
+import "./StudentReg.css";
+import "./StyleColor.css";
 
 export default function UserRegi(props) {
   const initialValues = {
@@ -114,7 +115,7 @@ export default function UserRegi(props) {
 
 
   return (
-    <div>
+    <div className="rainbow">
       {res && submitted && <div>{res}</div> }
       {(Object.entries(formErrors).length===0) && submitted && <div> Form Gets Submitted Sucessfully </div>}
       <form onSubmit={handleDoSubmit} noValidate>
