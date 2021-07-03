@@ -1,0 +1,134 @@
+{
+  "cities": [
+    {
+      "id": 1,
+      "name": "Chennai"
+    },
+    {
+      "id": 2,
+      "name": "Rameshwaram"
+    },
+    {
+      "id": 3,
+      "name": "Kanayakumari"
+    }
+  ],
+  "types": [
+    {
+      "id": 1,
+      "name": "Perm"
+    },
+    {
+      "id": 2,
+      "name": "Cntr"
+    },
+    {
+      "id": 3,
+      "name": "Vndr"
+    },
+    {
+      "id": 4,
+      "name": "Util"
+    }
+  ],
+  "user": [
+    {
+      "email": "tstee",
+      "city": "1",
+      "type": "3",
+      "intext": true,
+      "id": 1
+    },
+    {
+      "email": "tstee@tst.com",
+      "city": "1",
+      "type": "3",
+      "intext": true,
+      "id": 2
+    },
+    {
+      "email": "abcd",
+      "city": -1,
+      "type": "",
+      "intext": false,
+      "id": 3
+    },
+    {
+      "email": "abcd@gmail.com",
+      "city": "1",
+      "type": "1",
+      "intext": true,
+      "id": 4
+    },
+    {
+      "email": "aa@test.com",
+      "city": "1",
+      "type": "2",
+      "intext": true,
+      "id": 5
+    },
+    {
+      "email": "aa@test.com",
+      "city": "1",
+      "type": "2",
+      "intext": true,
+      "id": 6
+    },
+    {
+      "email": "aa@test.com",
+      "city": "1",
+      "type": "2",
+      "intext": true,
+      "id": 7
+    },
+    {
+      "email": "aa@test.com",
+      "city": "1",
+      "type": "2",
+      "intext": true,
+      "id": 8
+    },
+    {
+      "email": "aa@test.com",
+      "city": "1",
+      "type": "2",
+      "intext": true,
+      "id": 9
+    },
+    {
+      "email": "aa@test.com",
+      "city": "1",
+      "type": "2",
+      "intext": true,
+      "id": 10
+    },
+    {
+      "email": "aa@test.com",
+      "city": "1",
+      "type": "2",
+      "intext": true,
+      "id": 11
+    },
+    {
+      "email": "aa@test.com",
+      "city": "1",
+      "type": "2",
+      "intext": true,
+      "id": 12
+    },
+    {
+      "email": "aa@test.com",
+      "city": "1",
+      "type": "2",
+      "intext": true,
+      "id": 13
+    },
+    {
+      "email": "sahsg",
+      "city": "2",
+      "type": "1",
+      "intext": true,
+      "id": 14
+    }
+  ]
+}
