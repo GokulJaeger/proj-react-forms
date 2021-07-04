@@ -1,4 +1,4 @@
-// import React, { useState,useEffect } from "react";
+// import React, { useState, useEffect } from "react";
 // import ErrorMessage from "./ErrorMessage";
 // import "./StudentReg.css";
 // import "./StyleColor.css";
@@ -7,7 +7,7 @@
 //   const initialValues = {
 //     email: "",
 //     city: -1,
-//     type:"",
+//     type: "",
 //     intext: false,
 //   };
 
@@ -15,9 +15,9 @@
 
 //   const [formErrors, setformErrors] = useState({});
 //   const [submitted, setSubmitted] = useState(false);
-//   const [cities,setCities] = useState([]);
-//   const [types,setTypes] = useState([]);
-//   const [res,setRes] = useState(0);
+//   const [cities, setCities] = useState([]);
+//   const [types, setTypes] = useState([]);
+//   const [res, setRes] = useState(0);
 
 //   const handleDoSubmit = (e) => {
 //     e.preventDefault();
@@ -32,14 +32,14 @@
 //     setSubmitted(true);
 
 //     const reqOptios = {
-//       method:"POST",
-//       headers : {
-//         "Content-Type":"application/json"   
+//       method: "POST",
+//       headers: {
+//         "Content-Type": "application/json"
 //       },
 //       body: JSON.stringify(formValues)
 //     };
 
-//     fetch("http://localhost:3001/user",reqOptios).then(res => res.json()).then(data=>{
+//     fetch("http://localhost:3001/user", reqOptios).then(res => res.json()).then(data => {
 //       console.log("saved");
 //       console.log(data.id);
 //       setRes(data.id);
@@ -88,36 +88,36 @@
 //   };
 
 
-//   useEffect(()=>{
+//   useEffect(() => {
 //     console.log("Executed after render method=======");
-//     fetch("http://localhost:3001/cities").then(res => res.json()).then(data=>{
+//     fetch("http://localhost:3001/cities").then(res => res.json()).then(data => {
 //       console.log(data);
 //       setCities(data);
-//     }).catch(e=>{
+//     }).catch(e => {
 //       console.error("ERR in CITIES...");
 //       console.error(e);
-//     }).finally(()=>{
+//     }).finally(() => {
 //       console.log("I am in finally");
 //     })
 
 
-//     fetch("http://localhost:3001/types").then(res => res.json()).then(data=>{
+//     fetch("http://localhost:3001/types").then(res => res.json()).then(data => {
 //       console.log(data);
 //       setTypes(data);
-//     }).catch(e=>{
+//     }).catch(e => {
 //       console.error("ERR in CITIES...");
 //       console.error(e);
-//     }).finally(()=>{
+//     }).finally(() => {
 //       console.log("I am in finally");
 //     })
 //     console.log("===============")
-//   },[])
+//   }, [])
 
 
 //   return (
 //     <div className="rainbow">
-//       {res && submitted && <div>{res}</div> }
-//       {(Object.entries(formErrors).length===0) && submitted && <div> Form Gets Submitted Sucessfully </div>}
+//       {res && submitted && <div>{res}</div>}
+//       {(Object.entries(formErrors).length === 0) && submitted && <div> Form Gets Submitted Sucessfully </div>}
 //       <form onSubmit={handleDoSubmit} noValidate>
 //         <div>
 //           <label>username</label>

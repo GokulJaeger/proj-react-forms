@@ -1,7 +1,7 @@
 import React from 'react'
 import'./StyleColor.css';
 
-const StyleColor = ({ data, ts, ln }) => {
+const StyleColor = ({ data, ts, ln, }) => {
 
     console.log(data);
     console.log(ts);

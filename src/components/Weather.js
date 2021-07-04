@@ -9,6 +9,7 @@ function Weather() {
     const [main, setMain] = useState('');
     const [country,setCountry] = useState('');
     // const [iconID,setIconID] = useState('dfhhs');
+    
     useEffect(() => {
         fetch('https://api.openweathermap.org/data/2.5/weather?q=Karachi,pk&APPID=' + key + '&units=metric')
             .then(res => res.json())
