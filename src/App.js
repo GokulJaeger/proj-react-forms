@@ -1,10 +1,10 @@
 // import logo from './logo.svg';
 import './App.css';
-// import DemoStd from './components/DemoStd';
+import DemoStd from './components/DemoStd';
 // import StudentReg from './components/StudentReg';
 // import StyleColor from './components/StyleColor';
 // import Weather from './components/Weather';
-import StudentForm from './components/StudentForm';
+// import StudentForm from './components/StudentForm';
 
 function App() {
 
@@ -24,13 +24,13 @@ function App() {
     <div className="App">
       {/* <StyleColor data={user} ts={td} ln={frm}/> */}
       {/* <br/> */}
-      {/* <DemoStd/> */}
+      
       <br/>
       {/* <Weather/> */}
       {/* <br/>
       <br/> */}
       {/* <StudentReg onUserAdd={handleUserAddition} /> */}
-      <StudentForm/>
+      {/* <StudentForm/> */}
     </div>
   );
 }

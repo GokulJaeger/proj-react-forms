@@ -114,9 +114,12 @@ button:hover {
 } */
 
 .txt{
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: "Saira Semi Condensed", sans-serif;
   font-size: 1.8em;
 }
 /* /* span{
   color: red;
 } */
+select{
+  width: 104%;
+}
