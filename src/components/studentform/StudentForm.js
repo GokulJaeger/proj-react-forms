@@ -41,7 +41,7 @@ function StudentForm() {
                 ...prev,
                 // [name]: value
                 [name]: isInternalExternal ? event.target.checked : value,
-           
+
             }
         });
     }
@@ -70,7 +70,7 @@ function StudentForm() {
         if (!values.date) {
             errors.date = "Email cannot be Empyt";
         }
-        if (values.deptt< 0) {
+        if (values.deptt < 0) {
             errors.deptt = "Please Select a department";
         }
 
@@ -82,7 +82,7 @@ function StudentForm() {
         <div className="container">
             {Object.entries(formError).length === 0 && submitted && (
                 <div> Submitted Sucessfully </div>
-                           )}
+            )}
             <form onSubmit={handleSubmission} noValidate>
                 <h1 className="txt">STUDENT FORM</h1>
                 <div className="field" tabIndex="1">
@@ -90,15 +90,15 @@ function StudentForm() {
                         <i className="far fa-user"></i>Name
                     </label>
                     <input value={formValues.name} type="text" name="name" id="name" onChange={handleChanges} />
-                    
+
                 </div>
-<div><ErrorMsg msg={formError.name}/></div>
+                <div><ErrorMsg msg={formError.name} /></div>
                 <div className="field" tabIndex="2">
                     <label htmlFor="roll">
                         <i className="far fa-envelope"></i>Roll Number
                     </label>
                     <input value={formValues.roll} type="text" name="roll" id="roll" onChange={handleChanges} />
-                    <ErrorMsg msg={formError.roll}/>
+                    <ErrorMsg msg={formError.roll} />
                 </div>
 
                 <div className="field" tabIndex="3">
@@ -113,7 +113,7 @@ function StudentForm() {
                             })
                         }
                     </select>
-                    <ErrorMsg msg={formError.deptt}/>
+                    <ErrorMsg msg={formError.deptt} />
                 </div>
 
                 <div className="field" tabIndex="4">
@@ -121,7 +121,7 @@ function StudentForm() {
                         <i className="far fa-envelope"></i>Date of Birth
                     </label>
                     <input value={formValues.date} type="date" name="date" id="date" onChange={handleChanges} />
-                    <ErrorMsg msg={formError.date}/>
+                    <ErrorMsg msg={formError.date} />
                 </div>
 
                 <div className="field" tabIndex="5">
@@ -129,7 +129,7 @@ function StudentForm() {
                         <i className="far fa-envelope"></i>Your Email
                     </label>
                     <input value={formValues.email} type="email" name="email" id="email" onChange={handleChanges} />
-                    <ErrorMsg msg={formError.email}/>
+                    <ErrorMsg msg={formError.email} />
                 </div>
 
                 <div className="field" tabIndex="6">
@@ -137,7 +137,7 @@ function StudentForm() {
                         <i className="far fa-envelope"></i>Phone
                     </label>
                     <input value={formValues.phone} type="phone" name="phone" id="phone" onChange={handleChanges} />
-                    <ErrorMsg msg={formError.phone}/>
+                    <ErrorMsg msg={formError.phone} />
                 </div>
                 <div className="form-input-material">
                     <button className="btn btn-primary btn-ghost" type="submit">Submit</button>
