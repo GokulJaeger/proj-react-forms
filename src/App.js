@@ -7,10 +7,10 @@ import StudentForm from'./components/studentform/StudentForm';
 
 function App() {
 
-  const handleUserAddition = (e) => {
-    console.log("I am from Home App");
-    console.log(e);
-  }
+  // const handleUserAddition = (e) => {
+  //   console.log("I am from Home App");
+  //   console.log(e);
+  // }
 
   // const dte = new Date();
   // const td = dte.toISOString();

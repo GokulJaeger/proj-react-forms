@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./StudentForm.css";
 import ErrorMsg from "./ErrorMsg";
+import { date } from "yup";
 
 function StudentForm() {
   const initVal = {
@@ -56,7 +57,7 @@ function StudentForm() {
     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
 
     if (!values.email) {
-      errors.email = "Cannot be blank";
+      errors.email = "Email cannot be blank";
     } else if (!regex.test(values.email)) {
       errors.email = "Invalid email format";
     }
@@ -68,7 +69,7 @@ function StudentForm() {
       errors.phone = "Phone cannot be Empyt";
     }
     if (!values.date) {
-      errors.date = "Email cannot be Empyt";
+      errors.date = "Date cannot be Empyt";
     }
     if (values.deptt < 0) {
       errors.deptt = "Please Select a department";
