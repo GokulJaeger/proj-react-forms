@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./StudentForm.css";
 import ErrorMsg from "./ErrorMsg";
-import { date } from "yup";
+import swal from 'sweetalert';
 
 function StudentForm() {
   const initVal = {
@@ -10,7 +10,7 @@ function StudentForm() {
     roll: "",
     phone: "",
     deptt: -1,
-    date: new Date(),
+    date: new Date().toISOString,
   };
   const deptt = [
     { id: 1, name: "MCA" },
@@ -19,16 +19,23 @@ function StudentForm() {
     { id: 4, name: "BCOM" },
   ];
 
+  // {id:1, key:2345, reason:"Death"}
+  // {id:2, reason:"Medical"}
+  // {id:3, reason:"Office"}
+  // {id:4, reason:"Wedding"}
+
   const [formValues, setFormValues] = useState(initVal);
   const [formError, setFormError] = useState({});
   const [submitted, setSubmitted] = useState(false);
+  // const [alertt, setAlertt] = useState(false);
 
   const handleSubmission = (e) => {
     e.preventDefault();
     setFormError(validate(formValues));
     console.log("===" + Object.entries(formError).length);
     setSubmitted(true);
-    console.log("Submit Action !...");
+    // setAlertt(true);
+    swal("Submitted!.")
   };
 
   const handleChanges = (event) => {
@@ -82,9 +89,6 @@ function StudentForm() {
 
   return (
     <div className="container">
-      {Object.entries(formError).length === 0 && submitted && (
-        <div> Submitted Sucessfully </div>
-      )}
       <form onSubmit={handleSubmission} noValidate>
         <h1 className="txt">STUDENT FORM</h1>
         <div className="field" tabIndex="1">
@@ -178,11 +182,23 @@ function StudentForm() {
           />
           <ErrorMsg msg={formError.phone} />
         </div>
-        
+
         <div className="form-input-material">
           <button className="btn btn-primary btn-ghost" type="submit">
             Submit
           </button>
+        </div>
+        <div>
+          {Object.entries(formError).length === 0 && submitted && (
+            <div> Submitted Sucessfully
+              <p>Name: {formValues.name} Roll Number: {formValues.roll} </p>
+              <p>Department: {formValues.deptt}</p>
+              <p>Email: {formValues.email} Phone: {formValues.phone}</p>
+            </div>
+          )}
+          {/* {Object.entries(formError).length === 0 && submitted && alertt && (
+              
+          )} */}
         </div>
       </form>
     </div>

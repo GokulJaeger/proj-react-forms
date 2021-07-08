@@ -7,9 +7,9 @@ function Weather() {
     const [mainTemp, setMainTemp] = useState('');
     const [description, setDescription] = useState('');
     const [main, setMain] = useState('');
-    const [country,setCountry] = useState('');
+    const [country, setCountry] = useState('');
     // const [iconID,setIconID] = useState('dfhhs');
-    
+
     useEffect(() => {
         fetch('https://api.openweathermap.org/data/2.5/weather?q=Karachi,pk&APPID=' + key + '&units=metric')
             .then(res => res.json())
@@ -25,12 +25,17 @@ function Weather() {
     }, [])
     return (
         <div className="rainbow1">
-            <h1>Main Temperature : {mainTemp} Degrees Celsius</h1>
-            <h2>Feels like: {feels_like} Degrees Celsius</h2>
-            <h3>Weather Parameter: {main}</h3>
-            <h5>Description : {description}</h5>
-            <h2>Country : {country}</h2>
-            {/* <img src={"http://openweathermap.org/img/wn/" + iconID + "@2x.png"}/> */}
+            {/* <div>
+                <>
+            </div> */}
+            <div>
+                <h1>Main Temperature : {mainTemp} Degrees Celsius</h1>
+                <h2>Feels like: {feels_like} Degrees Celsius</h2>
+                <h3>Weather Parameter: {main}</h3>
+                <h5>Description : {description}</h5>
+                <h2>Country : {country}</h2>
+                {/* <img src={"http://openweathermap.org/img/wn/" + iconID + "@2x.png"}/> */}
+            </div>
         </div>
     )
 }

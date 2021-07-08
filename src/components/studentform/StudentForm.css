@@ -123,3 +123,8 @@ button:hover {
 select{
   width: 104%;
 }
+
+textarea{
+  width: 150%;
+  height: 100%;
+}

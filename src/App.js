@@ -1,5 +1,6 @@
 // import logo from './logo.svg';
 import './App.css';
+// import Studentapiform from './components/StudentAPIForm/Studentapiform';
 // import StudentReg from './components/reference/StudentReg';
 // import StyleColor from './components/labelstyle/StyleColor';
 // import Weather from './components/weather/Weather';
@@ -21,9 +22,10 @@ function App() {
 
   return (
     <div className="App">
-      {/* <StyleColor da={user} dt={td} dl={frm}/>
-      <br/>
-      <Weather/>
+      {/* <StyleColor data={user} ts={td} ln={frm}/>
+      <br/> */}
+      {/* <Studentapiform/> */}
+      {/* <Weather/>
       <br/> */}
       {/* <StudentReg onUserAdd={handleUserAddition} /> */}
       <StudentForm/>

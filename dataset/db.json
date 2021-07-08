@@ -1,0 +1,19 @@
+{
+    "student":[
+        {
+            "id":1, "name":"Gokul", "email":"gokuljaeger@gmail.com", "roll":"RA1245", "dept":"MCA", "phone":"326597451", "address":"Vellore"
+        },
+        {
+            "id":2, "name":"Natsu", "email":"natsu@gmail.com", "roll":"BG5841245", "dept":"MCOM", "phone":"986354451", "address":"HiddenLeaf"
+        },
+        {
+            "id":3, "name":"Deku", "email":"deku@gmail.com", "roll":"BMHA245", "dept":"M.Sc", "phone":"68726725230", "address":"UA Academy"
+        },
+        {
+            "id":4, "name":"Eren", "email":"eren@gmail.com", "roll":"AOTA245", "dept":"Diploma", "phone":"6286725230", "address":"Wall Maria"
+        },
+        {
+            "id":4, "name":"Tanjiro", "email":"tanjiro@gmail.com", "roll":"DS3943", "dept":"BTech", "phone":"637355230", "address":"Deamon Academy"
+        }
+    ]
+}
