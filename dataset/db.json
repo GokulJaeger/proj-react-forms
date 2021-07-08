@@ -1,19 +1,67 @@
 {
-    "student":[
-        {
-            "id":1, "name":"Gokul", "email":"gokuljaeger@gmail.com", "roll":"RA1245", "dept":"MCA", "phone":"326597451", "address":"Vellore"
-        },
-        {
-            "id":2, "name":"Natsu", "email":"natsu@gmail.com", "roll":"BG5841245", "dept":"MCOM", "phone":"986354451", "address":"HiddenLeaf"
-        },
-        {
-            "id":3, "name":"Deku", "email":"deku@gmail.com", "roll":"BMHA245", "dept":"M.Sc", "phone":"68726725230", "address":"UA Academy"
-        },
-        {
-            "id":4, "name":"Eren", "email":"eren@gmail.com", "roll":"AOTA245", "dept":"Diploma", "phone":"6286725230", "address":"Wall Maria"
-        },
-        {
-            "id":4, "name":"Tanjiro", "email":"tanjiro@gmail.com", "roll":"DS3943", "dept":"BTech", "phone":"637355230", "address":"Deamon Academy"
-        }
-    ]
+  "student": [
+    {
+      "id": 1,
+      "name": "Gokul",
+      "roll": "RA1245",
+      "dept": "MCA",
+      "date": "25/5/2021",
+      "email": "gokuljaeger@gmail.com",
+      "phone": "326597451"
+    },
+    {
+      "id": 2,
+      "name": "Natsu",
+      "roll": "BG5841245",
+      "dept": "MCOM",
+      "date": "2/9/2021",
+      "email": "natsu@gmail.com",
+      "phone": "986354451"
+    },
+    {
+      "id": 3,
+      "name": "Deku",
+      "roll": "BMHA245",
+      "dept": "M.Sc",
+      "date": "12/4/2021",
+      "email": "deku@gmail.com",
+      "phone": "68726725230"
+    },
+    {
+      "id": 4,
+      "name": "Eren",
+      "roll": "AOTA245",
+      "dept": "Diploma",
+      "date": "21/3/2021",
+      "email": "eren@gmail.com",
+      "phone": "6286725230"
+    },
+    {
+      "id": 4,
+      "name": "Tanjiro",
+      "roll": "DS3943",
+      "dept": "BTech",
+      "date": "14/10/2021",
+      "email": "tanjiro@gmail.com",
+      "phone": "637355230"
+    },
+    {
+      "name": "Natsu",
+      "email": "natsu@gmail.com",
+      "roll": "FT001",
+      "phone": "8367236845",
+      "deptt": "MCOM",
+      "date": "2017-06-15",
+      "id": 5
+    },
+    {
+      "name": "Inaho",
+      "email": "inaho@gmail.com",
+      "roll": "AL9834",
+      "phone": "368423645",
+      "deptt": "MCA",
+      "date": "2017-06-16",
+      "id": 6
+    }
+  ]
 }

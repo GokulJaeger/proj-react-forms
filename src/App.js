@@ -4,7 +4,8 @@ import './App.css';
 // import StudentReg from './components/reference/StudentReg';
 // import StyleColor from './components/labelstyle/StyleColor';
 // import Weather from './components/weather/Weather';
-import StudentForm from'./components/studentform/StudentForm';
+// import StudentForm from './components/studentform/StudentForm';
+import StdRegistration from './components/StudentAPIForm/StdRegistraction';
 
 function App() {
 
@@ -22,13 +23,26 @@ function App() {
 
   return (
     <div className="App">
-      {/* <StyleColor data={user} ts={td} ln={frm}/>
-      <br/> */}
-      {/* <Studentapiform/> */}
-      {/* <Weather/>
-      <br/> */}
-      {/* <StudentReg onUserAdd={handleUserAddition} /> */}
-      <StudentForm/>
+      {/* <div>
+<StyleColor data={user} ts={td} ln={frm}/>
+<br/>
+</div>s
+<div>
+<Studentapiform/>
+</div>
+<div>
+<Weather/>
+<br/>
+</div>
+<div>
+<StudentReg onUserAdd={handleUserAddition} />
+</div>
+<div>
+<StudentForm/>
+</div> */}
+      <div>
+        <StdRegistration />
+      </div>
     </div>
   );
 }

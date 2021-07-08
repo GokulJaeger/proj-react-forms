@@ -32,6 +32,7 @@ function StudentForm() {
   const handleSubmission = (e) => {
     e.preventDefault();
     setFormError(validate(formValues));
+    console.log("Log Warm: ",formError);
     console.log("===" + Object.entries(formError).length);
     setSubmitted(true);
     // setAlertt(true);
@@ -132,7 +133,7 @@ function StudentForm() {
             <option value="-1">Select Department</option>
             {deptt.map((x) => {
               return (
-                <option key={x.id} value={x.id}>
+                <option key={x.id} value={x.name}>
                   {x.name}
                 </option>
               );
