@@ -36,7 +36,7 @@ export default function Studentapiform() {
                                     <td>{items.name}</td>
                                     <td>{items.email}</td>
                                     <td>{items.roll}</td>
-                                    <td>{items.dept}</td>
+                                    <td>{items.deptt}</td>
                                     <td>{items.phone}</td>
 
                                 </tr>

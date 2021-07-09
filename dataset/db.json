@@ -4,7 +4,7 @@
       "id": 1,
       "name": "Gokul",
       "roll": "RA1245",
-      "dept": "MCA",
+      "deptt": "MCA",
       "date": "25/5/2021",
       "email": "gokuljaeger@gmail.com",
       "phone": "326597451"
@@ -13,7 +13,7 @@
       "id": 2,
       "name": "Natsu",
       "roll": "BG5841245",
-      "dept": "MCOM",
+      "deptt": "MCOM",
       "date": "2/9/2021",
       "email": "natsu@gmail.com",
       "phone": "986354451"
@@ -22,7 +22,7 @@
       "id": 3,
       "name": "Deku",
       "roll": "BMHA245",
-      "dept": "M.Sc",
+      "deptt": "M.Sc",
       "date": "12/4/2021",
       "email": "deku@gmail.com",
       "phone": "68726725230"
@@ -31,19 +31,10 @@
       "id": 4,
       "name": "Eren",
       "roll": "AOTA245",
-      "dept": "Diploma",
+      "deptt": "Diploma",
       "date": "21/3/2021",
       "email": "eren@gmail.com",
       "phone": "6286725230"
-    },
-    {
-      "id": 4,
-      "name": "Tanjiro",
-      "roll": "DS3943",
-      "dept": "BTech",
-      "date": "14/10/2021",
-      "email": "tanjiro@gmail.com",
-      "phone": "637355230"
     },
     {
       "name": "Natsu",
@@ -116,41 +107,6 @@
       "deptt": "BCOM",
       "date": "2021-07-04",
       "id": 12
-    },
-    {
-      "name": "dhgfg",
-      "email": "dfhgf",
-      "roll": "fjhfgh",
-      "phone": "781643634",
-      "deptt": "BCOM",
-      "date": "2021-07-04",
-      "id": 13
-    },
-    {
-      "name": "sjgh",
-      "email": "",
-      "roll": "yjdghn",
-      "phone": "765432",
-      "deptt": "BCA",
-      "date": "2021-07-18",
-      "id": 14
-    },
-    {
-      "name": "fhbgfhjg",
-      "email": "tfhgfhmg",
-      "roll": "dghkh77856",
-      "phone": "2786644",
-      "deptt": "MCOM",
-      "date": "2021-07-17",
-      "id": 15
-    },
-    {
-      "name": "dfgj",
-      "email": "",
-      "roll": "vjh,n",
-      "phone": "",
-      "deptt": "MCOM",
-      "id": 16
     }
   ]
 }

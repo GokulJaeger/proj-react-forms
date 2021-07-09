@@ -45,7 +45,7 @@ function StdRegistration(props) {
         // setPostData(formValues);
         // saveDate(postdata);
         console.log(Object.keys(formError).length);
-        console.warn(formError);
+        console.warn(formValues);
         if (isValid) {
             fetch("http://localhost:4000/student", {
                 method: "POST",
@@ -151,7 +151,7 @@ function StdRegistration(props) {
     return (
         <div className="container">
             <form onSubmit={handleSubmission} noValidate>
-                <h1 className="txt">STUDENT FORM</h1>
+                <h1 className="txt">STUDENT REGISTRATION</h1>
                 <div className="field" tabIndex="1">
                     <label>
                         <i className="far fa-user"></i>Name
@@ -190,7 +190,7 @@ function StdRegistration(props) {
                         onChange={handleChanges}
                         value={formValues.deptt}
                     >
-                        <option value="-1">Select Department</option>
+                        <option value="Select">Select Department</option>
                         {deptt.map((x) => {
                             return (
                                 <option key={x.id} value={x.name}>

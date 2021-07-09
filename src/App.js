@@ -1,12 +1,13 @@
 // import logo from './logo.svg';
 import './App.css';
-// import Studentapiform from './components/StudentAPIForm/Studentapiform';
-// import StudentReg from './components/reference/StudentReg';
-// import StyleColor from './components/labelstyle/StyleColor';
-// import Weather from './components/weather/Weather';
-// import StudentForm from './components/studentform/StudentForm';
+import { Link, Route, Switch } from 'react-router-dom';
+import {BrowserRouter as Router} from 'react-router-dom';
+import StyleColor from './components/labelstyle/StyleColor';
+import Weather from './components/weather/Weather';
+import StudentForm from './components/studentform/StudentForm';
 import StdRegistration from './components/StudentAPIForm/StdRegistraction';
-// import Studentapiform from './components/StudentAPIForm/Studentapiform';
+import Studentapiform from './components/StudentAPIForm/Studentapiform';
+import Home from './components/Home';
 
 function App() {
 
@@ -15,37 +16,39 @@ function App() {
   //   console.log(e);
   // }
 
-  // const dte = new Date();
-  // const td = dte.toISOString();
-  // const user = [
-  //   {fname:"Gokul", lname:"Jaeger"}
-  // ];
-  // const frm = "From -App Component";
+
 
   return (
-    <div className="App">
-      {/* <div>
-        <StyleColor data={user} ts={td} ln={frm} />
-        <br />
-      </div> */}
-      {/* <div>
-<Studentapiform/>
-</div> */}
-      {/* <div>
-        <Weather />
-        <br />
-      </div> */}
-      {/* <div>
-<StudentReg onUserAdd={handleUserAddition} />
-</div> */}
-      {/* <div>
-        <StudentForm />
-      </div> */}
-      <div>
-        <StdRegistration />
+    <Router>
+      <div className="App">
+        <li>
+          <Link to='/'>Home</Link>
+        </li>
+        <li>
+          <Link to='/label'>Label</Link>
+        </li>
+        <li>
+          <Link to='/weather'>Weather</Link>
+        </li>
+        <li>
+          <Link to='/studentForm'>StudentForm</Link>
+        </li>
+        <li>
+          <Link to='/stdRegistration'>StudentRegistration</Link>
+        </li>
+        <li>
+          <Link to='/studentapiform'>StudentApiForm</Link>
+        </li>
+        <Switch>
+          <Route path='/' exact component={Home}></Route>
+          <Route path='/label' exact component={StyleColor}></Route>
+          <Route path='/weather' exact component={Weather}></Route>
+          <Route path='/studentForm' exact component={StudentForm}></Route>
+          <Route path='/stdRegistration' exact component={StdRegistration}></Route>
+          <Route path='/studentapiform' exact component={Studentapiform}></Route>
+        </Switch>
       </div>
-      {/* <Studentapiform/> */}
-    </div>
+    </Router >
   );
 }
 
