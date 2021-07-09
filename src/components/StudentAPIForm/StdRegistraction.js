@@ -10,7 +10,7 @@ function StdRegistration(props) {
         roll: "",
         phone: "",
         deptt: "",
-        date: new Date().toISOString,
+        date: new Date(),
     };
     const deptt = [
         { id: 1, name: "MCA" },
@@ -24,6 +24,7 @@ function StdRegistration(props) {
     // {id:3, reason:"Office"}
     // {id:4, reason:"Wedding"}
 
+    let isValid = false;
     const [formValues, setFormValues] = useState(initVal);
     const [formError, setFormError] = useState({});
     const [submitted, setSubmitted] = useState(false);
@@ -43,24 +44,31 @@ function StdRegistration(props) {
         // }
         // setPostData(formValues);
         // saveDate(postdata);
+        console.log(Object.keys(formError).length);
+        console.warn(formError);
+        if (isValid) {
+            fetch("http://localhost:4000/student", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(formValues)
+            }).then((response) => {
+                if (response.status >= 200 && response.status < 300) {
+                    console.log(response);
+                    return response;
 
-        fetch("http://localhost:4000/student", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify(formValues)
-        }).then((response) => {
-            if (response.status >= 200 && response.status < 300) {
-                console.log(response);
-                return response;
+                } else {
+                    console.log('Somthing happened wrong');
+                }
+            }).catch(err => err);
+            swal("Form Submitted!.", "Success");
+        } else {
+            swal("UNSuccess");
+        }
 
-            } else {
-                console.log('Somthing happened wrong');
-            }
-        }).catch(err => err);
-        swal("Form Submitted!.", "Success");
     };
+
 
 
     //   function saveDate(items){
@@ -130,6 +138,11 @@ function StdRegistration(props) {
             errors.deptt = "Please Select a department";
         }
 
+        if (Object.keys(errors).length === 0) {
+            isValid = true;
+        }
+        console.warn(isValid);
+        console.warn(errors);
         return errors;
     };
 
@@ -177,7 +190,7 @@ function StdRegistration(props) {
                         onChange={handleChanges}
                         value={formValues.deptt}
                     >
-                        <option value="Select">Select Department</option>
+                        <option value="-1">Select Department</option>
                         {deptt.map((x) => {
                             return (
                                 <option key={x.id} value={x.name}>

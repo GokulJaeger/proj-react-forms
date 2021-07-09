@@ -6,6 +6,7 @@ import './App.css';
 // import Weather from './components/weather/Weather';
 // import StudentForm from './components/studentform/StudentForm';
 import StdRegistration from './components/StudentAPIForm/StdRegistraction';
+// import Studentapiform from './components/StudentAPIForm/Studentapiform';
 
 function App() {
 
@@ -24,25 +25,26 @@ function App() {
   return (
     <div className="App">
       {/* <div>
-<StyleColor data={user} ts={td} ln={frm}/>
-<br/>
-</div>s
-<div>
+        <StyleColor data={user} ts={td} ln={frm} />
+        <br />
+      </div> */}
+      {/* <div>
 <Studentapiform/>
-</div>
-<div>
-<Weather/>
-<br/>
-</div>
-<div>
-<StudentReg onUserAdd={handleUserAddition} />
-</div>
-<div>
-<StudentForm/>
 </div> */}
+      {/* <div>
+        <Weather />
+        <br />
+      </div> */}
+      {/* <div>
+<StudentReg onUserAdd={handleUserAddition} />
+</div> */}
+      {/* <div>
+        <StudentForm />
+      </div> */}
       <div>
         <StdRegistration />
       </div>
+      {/* <Studentapiform/> */}
     </div>
   );
 }
